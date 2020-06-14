@@ -13,6 +13,7 @@ Description: Create an application that can be used to write, save, and delete n
 * Click on the delete icon, the note should be deleted from the list.
 * Click on the saved note, the saved note information should be displayed on the page
    
+![noteTaker](https://user-images.githubusercontent.com/60719350/84598602-04cb7400-ae3a-11ea-8ae8-31d791f9d742.gif)   
 
 
 ## Install App
