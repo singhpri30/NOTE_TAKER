@@ -1,23 +1,20 @@
 {
-  "name": "note_taker",
+  "name": "note-taker",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/singhpri30/NOTE_TAKER.git"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/singhpri30/NOTE_TAKER/issues"
-  },
-  "homepage": "https://github.com/singhpri30/NOTE_TAKER#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
   }
 }
