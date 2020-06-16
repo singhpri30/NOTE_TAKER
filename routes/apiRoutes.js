@@ -6,20 +6,19 @@ const { v4: uuidv4 } = require("uuid");
 
 
 
-//   * GET `/api/notes` - Should read the `db.json` file and return all saved notes as JSON.
+//   * GET `/api/notes` - Should read the `db.json` file and send the file to the browser
 router.get("/notes", (req, res) => {
 
     res.sendFile(path.join(__dirname, '../db/db.json'));
 })
 
-//   * POST `/api/notes` - Should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client.
+//   * POST `/api/notes` - Should receive a new note to save on the request body,add id to new note and  add it to the `db.json` file, and then return the new note to the client.
 router.post("/notes", (req, res) => {
     fs.readFile("./db/db.json", "utf8", (err, data) => {
         if (err) throw err;
         let existingNotes = JSON.parse(data);
         let newNotes = req.body;
         newNotes.id = uuidv4();
-        console.log(newNotes.id);
         existingNotes.push(newNotes)
         fs.writeFile("./db/db.json", JSON.stringify(existingNotes), (err) => {
             if (err) throw err;
