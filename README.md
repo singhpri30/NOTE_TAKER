@@ -4,7 +4,7 @@ Description: Create an application that can be used to write, save, and delete n
 
 
 
-### This project has the following features:
+## This project has the following features:
 * To start the app run node server.js.
 * Open the browser and enter http://localhost:9000/
 * Click on *Get Started* button, the user will be redirected to http://localhost:9000/notes page
@@ -12,8 +12,9 @@ Description: Create an application that can be used to write, save, and delete n
 * Saved notes should be displayed on the page
 * Click on the delete icon, the note should be deleted from the list.
 * Click on the saved note, the saved note information should be displayed on the page
-   
-![noteTaker](https://user-images.githubusercontent.com/60719350/84598602-04cb7400-ae3a-11ea-8ae8-31d791f9d742.gif)   
+
+## App Screenshot
+![noteTaker](https://user-images.githubusercontent.com/60719350/84720898-544e9480-af4d-11ea-882d-04af9ed4094c.gif)
 
 
 ## Install App
